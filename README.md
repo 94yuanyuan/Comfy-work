@@ -58,7 +58,7 @@ bad quality, worst quality, worst detail, nsfw, mutated body, elongated limbs, h
 ****
 
 ### 範例 4: 引入 IPAdapter 的圖生圖
-![t2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-4.png)
+![i2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-4.png)
 當滿意姿勢與風格服裝分屬不同圖片時，從 img2img 起點迭代。導入簡易修復圖及範例 1 服裝（預處理：去除外元素、放大以增強注意力）。
 
 <img src="https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/clipspace-painted-8630132.png" alt="t2i" width="300" height="300">
@@ -69,7 +69,7 @@ bad quality, worst quality, worst detail, nsfw, mutated body, elongated limbs, h
 ****
 
 ### 範例 5: 使用 Hires.fix 的圖生圖
-![t2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-5.png)
+![i2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-5.png)
 基於範例 4 成果，從 img2img 起點進行高解析放大。開啟多數節點，但屏蔽 ControlNet OpenPose 以避免雜訊。
 
 <img src="https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/ComfyUI_00158_.png" alt="t2i" width="300" height="300">
