@@ -13,7 +13,7 @@
 
 以 Pikachu 埃及風主題為例，展示工作流的迭代過程。從基底生成逐步優化，強調模塊屏蔽與串接的實務應用。每個範例包含工作流程圖、關鍵調整與提示詞（正/負向）。
 
-### 範例 1: 單純文生圖 (txt2img 基底) {#example-1}
+### 範例 1: 單純文生圖 (txt2img 基底)
 ![t2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-1.png)
 屏蔽大多數節點，聚焦純文字提示生成，快速驗證概念。
 
@@ -31,13 +31,13 @@ bad quality, worst quality, worst detail, nsfw, mutated body, elongated limbs, h
 
 ****
 
-### 範例 2: 引入 LORA 的文生圖 {#example-2}
+### 範例 2: 引入 LORA 的文生圖
 ![t2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-2.png)
 基於範例 1，應用風格 LORA 微調，測試風格變換效果。
 
 ****
 
-### 範例 3: 引入 ControlNet OpenPose 的文生圖 {#example-3}
+### 範例 3: 引入 ControlNet OpenPose 的文生圖
 ![t2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-3.png)
 導入從 Stable Diffusion Forge 製作並匯出的骨架，結合提示詞調整，解決比例變形問題。
 <img src="https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/Z-pose.png" alt="t2i" width="300" height="300">
@@ -57,7 +57,7 @@ bad quality, worst quality, worst detail, nsfw, mutated body, elongated limbs, h
 
 ****
 
-### 範例 4: 引入 IPAdapter 的圖生圖 {#example-4}
+### 範例 4: 引入 IPAdapter 的圖生圖
 ![t2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-4.png)
 當滿意姿勢與風格服裝分屬不同圖片時，從 img2img 起點迭代。導入簡易修復圖及範例 1 服裝（預處理：去除外元素、放大以增強注意力）。
 
@@ -68,7 +68,7 @@ bad quality, worst quality, worst detail, nsfw, mutated body, elongated limbs, h
 
 ****
 
-### 範例 5: 使用 Hires.fix 的圖生圖 {#example-5}
+### 範例 5: 使用 Hires.fix 的圖生圖
 ![t2i](https://raw.githubusercontent.com/94yuanyuan/Comfy-work/refs/heads/main/workflow-5.png)
 基於範例 4 成果，從 img2img 起點進行高解析放大。開啟多數節點，但屏蔽 ControlNet OpenPose 以避免雜訊。
 
